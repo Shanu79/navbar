@@ -11,7 +11,7 @@ const NavLinks = () => {
         <div>
           <div className="px-3 text-left md:cursor-pointer hover:bg-rose-900 group">
           <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 group uppercase font-semibold"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -21,17 +21,17 @@ const NavLinks = () => {
               <div>
                 <div className="absolute top-15 hidden group-hover:md:block hover:md:block">
                   <div className="py-3">
-                    <div className="w-4 h-4 left-3 absolute mt-2 bg-primary rotate-45 rounded-sm"></div>
+                    <div className="w-4 h-4 left-3 absolute mt-2 bg-mainColor rotate-45 rounded-sm"></div>
                   </div>
-                  <div className="bg-primary p-4 grid grid-flow-col-dense gap-5 rounded-md">
+                  <div className="bg-mainColor p-4 grid grid-flow-col-dense gap-5 rounded-md">
                     {link.sublinks.map((mysublinks) => (
                       <div className="h-full">
-                        <h1 className="text-lg md:font-semibold">
+                        <h1 className="text-lg font-semibold">
                           {mysublinks.Head}
                         </h1>
                         {mysublinks.sublink.map((slink) => (
                           <li className="text-rose-200 my-2">
-                            <a to="/" className="hover:text-rose-50 font-light">
+                            <a to="/" className="hover:text-rose-50">
                               {slink.name}
                             </a>
                           </li>
