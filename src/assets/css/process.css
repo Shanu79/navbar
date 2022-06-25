@@ -1,0 +1,486 @@
+body {
+    background-color: #f9f5f5;
+}
+
+.container {
+    max-width: 1033px;
+}
+
+section.header-below {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: url('/assets/img/Process\ Header\ Image.png')no-repeat center center/cover;
+}
+
+.header-below .inner {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 32%;
+    left: 50%;
+}
+
+.header-below .inner h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+    /* margin-left: 23rem; */
+}
+
+.header-below .inner h6 {
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    /* margin-left: 25rem; */
+}
+
+/* ===========================Our Work-=========================== */
+
+
+
+
+section.work .heading {
+    padding: 2rem;
+    margin: auto;
+    width: fit-content;
+}
+
+section.work .timeline-area {
+    position: relative;
+}
+
+section.work .timeline-area .single-timeline {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    padding: 0px 50px;
+}
+
+section.work .timeline-area .single-timeline .timeline-item {
+    display: flex;
+    position: relative;
+    /* border: 1px solid ; */
+    padding: 35px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+section.work .timeline-area .single-timeline .timeline-img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: white;
+    top: 48%;
+    right: 50%;
+}
+
+section.work .timeline-area .single-timeline .timeline-img::before {
+    position: absolute;
+    content: "";
+    left: 43%;
+    top: 34.8%;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #2575fc;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+section.work .timeline-area .timeline-bar {
+    position: absolute;
+    top: 0;
+    left: 49.3%;
+    height: 100%;
+    width: 2px;
+    background-color: #e3e8ed;
+    z-index: -1;
+}
+
+section.work .timeline-area .single-timeline .timeline-item .timeline-content p {
+    width: 285px;
+    font-size: 20px;
+    color: rgb(99, 95, 95);
+}
+
+section.work .timeline-area .single-timeline .timeline-item .timeline-content h3 {
+    padding-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+section.work .timeline-area .single-timeline .timeline-item .timeline-icon {
+    padding: 0 20px;
+}
+
+section.work .timeline-area .single-timeline .timeline-item .timeline-icon i {
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(1) .timeline-item .timeline-icon i {
+    background-color: rgb(62, 231, 62);
+}
+
+section.work .timeline-area div:nth-child(2) .timeline-item .timeline-icon i {
+    background-color: blueviolet;
+}
+
+section.work .timeline-area div:nth-child(3) .timeline-item .timeline-icon i {
+    background-color: rgb(243, 135, 153);
+}
+
+section.work .timeline-area div:nth-child(4) .timeline-item .timeline-icon i {
+    background-color: rgb(20, 187, 20);
+}
+
+section.work .timeline-area div:nth-child(5) .timeline-item .timeline-icon i {
+    background-color: blueviolet;
+}
+
+section.work .timeline-area .single-timeline .timeline-item .timeline-pin {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+section.work .timeline-area div:nth-child(odd) {
+    justify-content: left;
+}
+
+section.work .timeline-area div:nth-child(even) {
+    justify-content: right;
+}
+
+section.work .timeline-area div:nth-child(even) .timeline-item .timeline-pin {
+    top: 42%;
+    right: 94.5%;
+}
+
+section.work .timeline-area div:nth-child(odd) .timeline-item .timeline-pin {
+    top: 42%;
+    left: 94.5%;
+}
+
+section.work .timeline-area div:nth-child(odd) .timeline-content {
+    text-align: right;
+}
+
+section.work .timeline-area div:nth-child(even) .timeline-content {
+    text-align: left;
+}
+
+section.work .timeline-area div:nth-child(odd) .timeline-item {
+    margin-right: 8rem;
+}
+
+section.work .timeline-area div:nth-child(even) .timeline-item {
+    margin-left: 8rem;
+}
+
+section.work .timeline-area .single-timeline .timeline-info {
+    align-items: center;
+    display: flex;
+}
+
+
+/* ++++++++++ Hover ++++++++++ */
+
+section.work .timeline-area div:hover .timeline-img::before {
+    opacity: 1;
+}
+
+/* +++++++++++++++++ For First child +++++++++++++++ */
+section.work .timeline-area div:nth-child(1):hover .timeline-item {
+    background-color: rgb(62, 231, 62);
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(1):hover .timeline-item .timeline-pin {
+    color: white;
+    background-color: rgb(62, 231, 62);
+}
+
+section.work .timeline-area div:nth-child(1):hover .timeline-item .timeline-content p {
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(1):hover .timeline-item .timeline-icon i {
+    background-color: white;
+    color: rgb(62, 231, 62);
+}
+
+/* +++++++++++++++++ For Second child +++++++++++++++ */
+section.work .timeline-area div:nth-child(2):hover .timeline-item {
+    background-color: blueviolet;
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(2):hover .timeline-item .timeline-pin {
+    color: white;
+    background-color: blueviolet;
+}
+
+section.work .timeline-area div:nth-child(2):hover .timeline-item .timeline-content p {
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(2):hover .timeline-item .timeline-icon i {
+    background-color: white;
+    color: blueviolet;
+}
+
+/* +++++++++++++++++ For Third child +++++++++++++++ */
+section.work .timeline-area div:nth-child(3):hover .timeline-item {
+    background-color: rgb(243, 135, 153);
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(3):hover .timeline-item .timeline-pin {
+    color: white;
+    background-color: rgb(243, 135, 153);
+}
+
+section.work .timeline-area div:nth-child(3):hover .timeline-item .timeline-content p {
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(3):hover .timeline-item .timeline-icon i {
+    background-color: white;
+    color: rgb(243, 135, 153);
+}
+
+/* +++++++++++++++++ For Fourth child +++++++++++++++ */
+section.work .timeline-area div:nth-child(4):hover .timeline-item {
+    background-color: rgb(62, 231, 62);
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(4):hover .timeline-item .timeline-pin {
+    color: white;
+    background-color: rgb(62, 231, 62);
+}
+
+section.work .timeline-area div:nth-child(4):hover .timeline-item .timeline-content p {
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(4):hover .timeline-item .timeline-icon i {
+    background-color: white;
+    color: rgb(62, 231, 62);
+}
+
+/* +++++++++++++++++ For Fifth child +++++++++++++++ */
+section.work .timeline-area div:nth-child(5):hover .timeline-item {
+    background-color: blueviolet;
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(5):hover .timeline-item .timeline-pin {
+    color: white;
+    background-color: blueviolet;
+}
+
+section.work .timeline-area div:nth-child(5):hover .timeline-item .timeline-content p {
+    color: white;
+}
+
+section.work .timeline-area div:nth-child(5):hover .timeline-item .timeline-icon i {
+    background-color: white;
+    color: blueviolet;
+}
+
+/* =====================New product================== */
+section.new-product {
+    padding: 8rem 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    background: url('/assets/img/Process\ Page\ Second\ Image.png')no-repeat center center/cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.new-product .inner h6 {
+    color: rgb(240, 217, 15);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+section.new-product .inner h1 {
+    font-size: 3.3rem;
+    color: white;
+    margin: 10px;
+}
+
+section.new-product .inner p {
+    font-size: 17px;
+    color: white;
+}
+
+section.new-product .inner a button {
+    height: 32px;
+    width: 107px;
+    font-size: 13px;
+    margin-top: 1rem;
+    color: #504c4c;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+section.new-product .inner a button:hover {
+    background-color: brown;
+    color: white;
+}
+
+
+section.profile {
+    max-width: 1124px;
+}
+
+
+/* ++++++++++++++++++++ Media Query +++++++++++++++++++++ */
+@media (max-width:1142px) {
+    section.work .timeline-area .single-timeline .timeline-item {
+        padding: 13px;
+    }
+
+    section.work .timeline-area div:nth-child(even) .timeline-item .timeline-pin {
+        top: 42%;
+        right: 92.5%;
+    }
+
+    section.work .timeline-area div:nth-child(odd) .timeline-item .timeline-pin {
+        top: 42%;
+        left: 92.5%;
+    }
+}
+
+@media (max-width:1047px) {
+    section.work .timeline-area .single-timeline .timeline-img {
+        opacity: 0;
+    }
+
+    section.work .timeline-area .timeline-bar {
+        opacity: 0;
+    }
+}
+
+@media(max-width:858px) {
+    .header-below .inner h1 {
+        font-size: 3rem;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .header-below .inner h6 {
+        font-size: 20px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .header-below .inner {
+        left: 45%;
+    }
+}
+
+@media (max-width:840px) {
+    section.work .timeline-area .single-timeline .timeline-item .timeline-content p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    section.work .timeline-area div:nth-child(odd) .timeline-item,
+    section.work .timeline-area div:nth-child(even) .timeline-item {
+        margin: 1rem 2rem;
+    }
+}
+
+@media(max-width:786px) {
+    section.new-product .inner h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:700px) {
+    section.work .timeline-area div:nth-child(odd) .timeline-content {
+        text-align: left;
+    }
+
+    section.work .timeline-area .single-timeline {
+        padding: 0;
+    }
+}
+
+@media (max-width:605px) {
+    section.new-product .inner h1 {
+        font-size: 1.5rem;
+    }
+
+    section.new-product .inner p {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:550px) {
+
+    section.work .timeline-area div:nth-child(odd) .timeline-item,
+    section.work .timeline-area div:nth-child(even) .timeline-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.work .timeline-area div:nth-child(even) {
+        flex-direction: column;
+    }
+
+    section.work .timeline-area .single-timeline .timeline-item .timeline-icon {
+        padding: 0;
+    }
+
+    section.work .timeline-area .single-timeline .timeline-item .timeline-content p {
+        margin-bottom: 1rem;
+    }
+
+    section.work .timeline-area div:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:468px){
+    .header-below .inner {
+        left: 24%;
+    }
+}
+
+@media(max-width:413px) {
+    section.work .timeline-area div:nth-child(odd) .timeline-item .timeline-pin {
+        left: 89.5%;
+    }
+
+}

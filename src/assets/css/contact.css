@@ -1,0 +1,391 @@
+
+
+:root{
+    --text-color:rgb(41, 39, 39);
+}
+
+section.header-bottom {
+    margin-bottom: 2rem;
+}
+
+section.header-bottom .inner {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/img/Contact\ Us\ Header\ Image.png");
+}
+
+section.header-bottom .inner h1 {
+    color: white;
+    transition: all .3s ease;
+    margin-right: 31rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+section.header-bottom .inner h5{
+    color: white;
+    transition: all .3s ease;
+    margin-right: 31rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* <!-- =================Form====================== --> */
+section.form .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+section.form .wrapper .left{
+    width: 50%;
+}
+
+section.form .wrapper .left h5 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+}
+
+section.form .wrapper .left form{
+    display: flex;
+    flex-direction: column;
+}
+
+section.form .wrapper .left span{
+    color: white;
+}
+
+section.form .wrapper .left h5::before {
+    content: '';
+    width: 54px;
+    position: absolute;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    z-index: -1;
+    height: 25px;
+    bottom: -3px;
+    left: -2px;
+    background: linear-gradient(to right, #560216, #b6405c);
+}
+
+section.form .wrapper .left h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    color: black;
+}
+
+section.form .wrapper .left p{
+    line-height: 1.7;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+section.form .wrapper .left p:after{
+    content: '';
+    height: 4px;
+    width: 80px;
+    background-color: #b8163b;
+    position: absolute;
+    top: 65px;
+    border-radius: 5px;
+    left: 2px;
+    margin: 1rem 0;
+}
+
+section.form .wrapper .left h6{
+    color: #706767;
+    padding-top: 2.4rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+section.form .wrapper .left form label{
+    color: grey;
+    font-size: 15px;
+}
+
+section.form .wrapper .left form input{
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 12px;
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+    background-color: #eeeaea;
+    outline: none;
+}
+
+section.form .wrapper .left form select{
+    width: 250px;
+    height: 50px;
+    border: .4px solid #5a5757;
+    font-size: 14px;
+    color: #544e4e;
+    outline:none ;
+}
+
+section.form .wrapper .left form button{
+    background: linear-gradient(to right, #560216, #b6405c);
+    width: 160px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    border: none;
+    box-shadow: 1px 1px 27px #0000ff78;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1.3rem;
+    transition: all .2s ease-in-out;
+}
+
+section.form .wrapper .left form button:hover{
+    background: linear-gradient(to right, black, rgb(155, 150, 150));
+    box-shadow: 1px 1px 27px #1c1c1f78;
+}
+
+section.form .wrapper .right{
+    display: flex;
+}
+
+section.form .wrapper .right img{
+    width: 490px;
+    object-fit: cover;
+    height: 550px;
+}
+
+/* <!-- ======================================Map======================== --> */
+section.map .inner p iframe{
+    width: 100%;
+}
+
+/* ====================section map-blelow==================== */
+section.map-below{
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+}
+ .right{
+    display: flex;
+}
+ .right .contact{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    box-shadow: 1px 1px 35px #aea8a896;
+    width: 320px;
+    align-items: center;
+    padding: 11px 0;
+    border-radius: 9px;
+}
+
+ .right .contact i{
+    font-size: 30px;
+    color: #b31439;
+    margin-bottom: 1rem;
+}
+
+ .right .contact h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.right .contact a{
+    color: black;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.right .contact a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.right .address{
+    display: flex;
+    padding: 11px 0;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 9px;
+    width: 853px;
+    margin-left: 2rem;
+    box-shadow: 1px 1px 35px #aea8a896;
+}
+
+.right .address i{
+    font-size: 30px;
+    color: #b31439;
+}
+
+.right .address .address-heading{
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 400;
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.right .address .inner{
+    display: flex;
+    justify-content: space-between;
+ width: 86%;
+}
+
+.right .address .inner .item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.right .address .inner h2, .google-review .google-review-inner h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    width: fit-content;
+    font-size: 21px;
+   margin-bottom: 1rem;
+}
+
+.right .address .inner p{
+    font-size: 16px;
+    color: rgb(82, 79, 79);
+}
+
+.right .address .google-review{
+    width: 99%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+}
+
+.right .address .google-review h1{
+    width: fit-content;
+    color: #560216;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.right .address .google-review .google-review-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.right .address .google-review .left{
+    /* height: 70px;
+    width: 76px; */
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url('/public/assets/img/googleReviews/1.svg'); */
+    margin-right: 1rem;
+}
+
+.right .address .google-review .left i{
+    font-size: 57px;
+    color: white;
+}
+
+.right .address .google-review .right img{
+    background-color: white;
+    padding: 4px 6px;
+    width: 85px;
+    height: 84px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.right .address .google-review .right p{
+    color: white;
+    align-items: center;
+    width:235px;
+    display: flex;
+    background-color: #141485;
+    font-size: 15px;
+    padding: 8px 5px;
+    letter-spacing: 1px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all .3s ease;
+    position: relative;
+}
+
+.right .address .google-review .right p::before{
+    content: "Review Now";
+    color: grey;
+    position: absolute;
+    font-size: 42px;
+    left: -6px;
+    opacity: 0.2;
+    font-weight: bold;
+    display: none;
+}
+
+.right .address .google-review .google-review-inner a:hover p{
+    background-color:white;
+    color: #141485;
+}
+
+section.contact .contact-mid .left img{
+    width: 252px;
+}
+
+section.contact .contact-mid .right h6{
+    font-size: 16px;
+}
+
+
+section.contact .contact-social-links .call {
+    background-color: #560216;
+}
+
+section.contact .contact-social-links .call i {
+    background-color: rgb(247, 160, 62);
+}
+
+section.contact .contact-social-links .facebook {
+    background-color: #7b031f;
+}
+
+section.contact .contact-social-links .facebook i {
+    background-color:rgb(65, 65, 241);
+}
+
+section.contact .contact-social-links .whatsapp {
+    background-color:#7b031f ;
+}
+
+section.contact .contact-social-links .whatsapp i {
+    background-color: rgb(24, 207, 24);
+}
+
+section.contact .contact-social-links .email {
+    background-color: #560216;
+}
+
+section.contact .contact-social-links .email i {
+    background-color:brown;
+}
+
+
+section.contact .contact-social-links .inner:hover a {
+    color: #e48fa3;
+}
